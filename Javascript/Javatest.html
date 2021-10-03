@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+
+<body>
+ <script>
+     console.log("Hello World!")
+ </script>   
+
+<button>Click me!</button>
+<p>You haven't clicked the button</p>
+
+<script>
+    const btn = document.querySelector('button')
+    const txt = document.querySelector('p')
+
+    btn.addEventListener('click', updateBtn)
+
+    function updateBtn() {
+        if (btn.textContent === 'Click me!'){
+            btn.textContent = 'DO IT AGAIN!';
+            txt.textContent = 'do what it says, Please!';
+        } else {
+            btn.textContent = 'Break me free!';
+            txt.textContent = 'darkness becomes us';
+        }
+    }
+
+</script>
+</body>
+
+</html>
+
