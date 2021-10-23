@@ -11,6 +11,19 @@
 
     <button>Press Me</button>
 
+
+    <h2>Here's a line of text for examples in java</h2>
+
+    <p id="stringReplace">Hey, your name is _____, and you're a _____ right?</p>
+
+    <p id="upperCase"> This is lowercase now, but it'll become uppercase once you click on the thing</p>
+
+    <p id="lowy">THIS IS GOING TO TURN LOWERCASE FROM CAPS
+    </p>
+
+
+    <button onclick="nameButton()">This button shows your name, and changes the next two lines</button>
+
     <script>
         const max = 57;
         let actual = max - 13;
@@ -26,10 +39,33 @@
             alert('Hello ' + name + ', nice to see you! User #' + btnPress )
 
         }
+        </script>
 
+        <script>
+            
+            function nameButton() {
+                let text = document.getElementById("stringReplace").innerHTML;
+                document.getElementById("stringReplace").innerHTML = text.replace(/_____/g, "Fucking Loser HAHAHAHAHAHHAH");
 
+                let uppy = document.getElementById("upperCase").innerHTML;
+                document.getElementById("upperCase").innerHTML = uppy.toUpperCase();
+                
+                document.getElementById("lowy").innerHTML = document.getElementById("lowy").innerHTML.toLowerCase()
+            }
 
+        </script>
+
+    <h2> <u> Javascript: Turning Strings into Arrays </u></h2>
+        <p>Here lets display the first array element after a string split.</p>
+        <p id="splitOne"></p>
+    <script>
+        let letters = "a,b,c,d,e,f";
+        const arrayOne = letters.split(",");
+        document.getElementById("splitOne").innerHTML = arrayOne[0]
     </script>
+
+
+
 
 </body>
 
