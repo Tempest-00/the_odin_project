@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Notes</title>
+
+    <style>
+        html{
+            background-color: black;
+        }
+        .title{
+            font-weight: 1000;
+            color: aliceblue;
+            text-align: center;
+        }
+        .notes{
+            display: flex;
+            flex-direction:  column;
+            background-color:  aliceblue;
+            border-radius: 10px;
+            padding: 20px;
+            font-family: Arial;
+        }
+        li {
+            font-weight: 800;
+        }
+        p {
+            font-weight: 200;
+        }
+        .quotes li {
+            font-weight: 200;
+        }
+        .codebox {
+            background-color:  black;
+            color:  white;
+            margin: 5px 20px 5px 20px;
+            padding: 20px;
+            border-radius:  10px;
+        }
+    </style>
+</head>
+<body>
+    
+<h1 class="title">JAVASCRIPT NOTES</h1>
+    <section class="notes">
+        <h2>Javascript 8 data types</h2>
+        <ul>
+            <li>Number</li> 
+            <p>Basic numbers used for operations like adding/subtracting. Also includes special values such as Infinity, -Infinity, and NaN (not a number) </p>
+            <li>BigInt</li>
+            <p>For extremely large integers, elaborated later.</p>
+            <li>Strings</li>
+            <p>Strings are words used as variables that can be spliced together or replaced, they must be surrounded by one of <u>3 different types of quotes.</u> 
+            <ul class="quotes">
+                <li>Double Quotes ( "Beep" )</li>
+                <li>Single Quotes ( 'Beep' )</li>
+                <li>Backtick Quotes ( `Beep` )</li>    
+            </ul>
+             <br> The difference between these quotes is that <b>Double and Single</b> are both "simple" and functionally work the same in javascript. <br> <br><b> Backtick </b> quotes are "extended functionality" and allow embedding of variables and expressions into the string by wrapping them in ${. . .} <br> <br> <strong> Ex:</strong> <br> <div class="codebox">
+             let name = "Legendary FSM"; <br>
+             alert( `Hello, ${name}!`);</div> <br> 
+             This would result in the console giving [ Hello, Legendary FSM! ] <br> <br>
+             Please note that doing the same with single or double quotes would give [ Hello, ${name}! ]
+            </p>
+            <li>Symbol</li>
+                <p>Used to create unique identifiers for Objects. </p>
+            <li>Object</li>
+                <p>Objects are special, as they are the only non "primitive" data type. This means that they are able to store collections of data and more complex entities, rather than simple values such as strings or numbers.</p>
+            <li>Boolean</li> 
+                <p>True or False, and as a result from comparisons.</p>
+            <li>Null</li> 
+                <p>"null" refers specifically to nothing, or an empty value.</p>
+            <li>Undefined</li> 
+                <p>Refers to a variable that is declared, but is not assigned a value. </p>
+        </ul>
+
+        <h2>The typeof operator</h2>
+        <p>The typeof operator will return a string with the type of data the given variable is. <br><br> <b>Example:</b> typeof 0 // returns "number"</p>
+
+        <h2><u>Strings - Basics</u></h2>
+            Creating a string. 
+        <p>
+            <div class="codebox">const string = `the revolution will not be televised` <br> console.log(string)</div> 
+            
+        </p>
+</section> 
+
+
+</body>
+
+</html>
